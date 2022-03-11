@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(HPC)
+add_executable(HPC src/main.cpp)
+find_package(boost_program_options REQUIRED)
+target_link_libraries(HPC boost_program_options)
+set(EXECUTABLE_OUTPUT_PATH "/home/ruairidh/Documents/Imperial/Year_3/HPC/HPC")
